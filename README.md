@@ -7,11 +7,13 @@ Collection of data extracted from Geoportal Hamburg and the script to scrape the
 - sensor_data_hamburg.csv includes the iot_id, result and date (extracted from phenomenonTime) of each observation day.
 
 # Outliers
-IMAGE Outliers
+![Outliers](https://i.ibb.co/V9qFSb6/outliers.png)
+
 Please pay close attention to the values returned by the stations with the ids 15776, 15780 and 15784. These stations have reported counts of around 20K usually, but have results ranging from 4-20 Million starting on january 27th ending February 5th 2021. Filtering these technical failures out is probably the most reasonable measure.
 
 # Growing Station Network
-IMAGE Station Network
+![Station Network Count](https://i.ibb.co/zFtqF2r/Stationcount.png)
+
 Also consider that, judging from the available data, it seems that the network of sensors has been expanded gradually.
 
 The first bike sensor results are from December 2019, where only 20 bike count sensors provide data. This number has been increasing until December 2020, where it reached the state of today (December 2021), which is a total of 127 stations. This increase in sample size and local distribution has to be considered when working with aggregations over all stations.
