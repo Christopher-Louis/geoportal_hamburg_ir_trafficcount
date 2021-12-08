@@ -1,17 +1,24 @@
 # Geoportal Hamburg IR Trafficcount
-Collection of data extracted from Geoportal Hamburg and the script to scrape the data.
+This is a collection of data extracted from [Geoportal Hamburg](https://geoportal-hamburg.de/verkehrsportal/#) and the script to scrape the data.
+
+More specifically this is an extract of the data that can be visualized under: 
+
+Issues & Topics -> Subject Data -> Planungsdaten -> Verkehrsdaten (Infrarotdetektoren) Hamburg -> Rad & Kfz. 
+
+This data is generated from infrared-sensors that count each passing car or bicycle. Sensors only count one type of vehicle per sensor.
 
 # About the Data
 
-- sensor_ids_hamburg.csv includes the iot_id, lat/lon values and observation type of each station.
-- sensor_data_hamburg.csv includes the iot_id, result and date (extracted from phenomenonTime) of each observation day.
+## Content
+- sensor_ids_hamburg.csv includes the iot_id, lat/lon values and observation type of each sensor.
+- sensor_data_hamburg.csv includes the iot_id, result and date of the daily observations.
 
-# Outliers
+## Outliers
 ![Outliers](https://i.ibb.co/V9qFSb6/outliers.png)
 
 Please pay close attention to the values returned by the stations with the ids 15776, 15780 and 15784. These stations have reported counts of around 20K usually, but have results ranging from 4-20 Million starting on january 27th ending February 5th 2021. Filtering these technical failures out is probably the most reasonable measure.
 
-# Growing Station Network
+## Growing Station Network
 ![Station Network Count](https://i.ibb.co/zFtqF2r/Stationcount.png)
 
 Also consider that, judging from the available data, it seems that the network of sensors has been expanded gradually.
