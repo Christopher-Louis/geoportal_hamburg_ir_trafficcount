@@ -22,11 +22,12 @@ For the car sensors the first available data is from November 2020, starting wit
 
 # About the script
 
-We decided to share the script we used to scrape the data from the web, so that interested users can download their own updated data. It is rudimentary and there is no error handling in the script, but it did the job for us. When scraping we ran across the following error sometimes: 
-'''
-Failed to establish a new connection: [Errno 113] No route to host'))
-'''
+We decided to share the script we used to scrape the data from the web, so that interested users can download their own updated data. It is rudimentary and there is no error handling in the script, but it did the job for us.
 
+When scraping we ran across the following error sometimes: 
+```
+Failed to establish a new connection: [Errno 113] No route to host
+```
 Just rerun the script and eventually it will work and complete the write to csv. Of course this can be changed to your liking. If you wish to export the data otherwise, export the two dataframes accordingly.
 
 
