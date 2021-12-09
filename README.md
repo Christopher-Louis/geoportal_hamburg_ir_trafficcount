@@ -16,7 +16,7 @@ This data is generated from infrared-sensors that count each passing car or bicy
 ## Outliers
 ![Outliers](https://i.ibb.co/V9qFSb6/outliers.png)
 
-Please pay close attention to the values returned by the stations with the ids 15776, 15780 and 15784. These stations have reported counts of around 20K usually, but have results ranging from 4-20 Million starting on january 27th ending February 5th 2021. Filtering these technical failures out is probably the most reasonable measure.
+Please pay close attention to the values returned by the stations with the ids 15776, 15780 and 15784. These stations have daily result sums of around 20K usually, but have results ranging from 4-20 Million starting on january 27th ending February 5th 2021. Filtering these technical failures out is probably the most reasonable measure.
 
 ## Growing Station Network
 ![Station Network Count](https://i.ibb.co/zFtqF2r/Stationcount.png)
