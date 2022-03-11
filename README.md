@@ -11,7 +11,7 @@ This data is generated from infrared-sensors that count each passing car or bicy
 
 ## Content
 - sensor_ids_hamburg.csv includes the iot_id, lat/lon values and observation type of each sensor.
-- sensor_data_hamburg.csv includes the iot_id, result and date of the daily observations.
+- sensor_data_hamburg.csv includes the iot_id, phenomenonTime, result and date of the daily observations.
 
 ## Outliers
 ![Outliers](https://i.ibb.co/V9qFSb6/outliers.png)
