@@ -31,6 +31,8 @@ For the car sensors the first available data is from November 2020, starting wit
 
 We decided to share the script that we used to scrape the data from the web, so that interested users can download their own updated data. It is rudimentary and there is no error handling in the script, but it did the job for us.
 
+The necessary modules must be installed for the script to work. Look at the import statements at the beginning of the script, to see which modules are required.
+
 When scraping we ran across the following error sometimes: 
 ```
 Failed to establish a new connection: [Errno 113] No route to host
